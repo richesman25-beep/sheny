@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: atelier-trading
+    runtime: python
+    plan: free
+    buildCommand: pip install --disable-pip-version-check -r requirements.txt
+    startCommand: bash web-start.sh
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.14"

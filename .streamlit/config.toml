@@ -1,0 +1,14 @@
+[server]
+headless = true
+maxUploadSize = 20
+enableXsrfProtection = true
+enableCORS = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+primaryColor = "#6366f1"
